@@ -57,7 +57,7 @@ public class controlStatement
         System.out.println("===================");
         //And Or
 
-        int year = 2025;
+        int year = 2027;
 
         if ((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0))
         {
