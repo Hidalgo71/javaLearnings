@@ -67,21 +67,5 @@ public class controlStatement
         {
             System.out.println(year + " is not a Leap Year");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
