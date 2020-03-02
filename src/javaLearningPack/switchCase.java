@@ -61,8 +61,7 @@ public class switchCase
                         System.out.println(season);
                 }
 
-
-
         System.out.println("===================");
+
     }
 }
