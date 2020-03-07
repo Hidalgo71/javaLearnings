@@ -62,6 +62,67 @@ public class switchCase
                 }
 
         System.out.println("===================");
+                String month2 = "MARCH";
+                int turnBackMonth = switchCase.takeMonthNum(month2);
 
+                if (turnBackMonth == 0)
+                {
+                    System.out.println("Wrong Month!");
+                }
+                else
+                {
+                    System.out.println(turnBackMonth);
+                }
+    }
+    public static int takeMonthNum(String month2)
+    {
+        int monthNum = 3;
+        if (month2 == null)
+        {
+            return monthNum;
+        }
+        switch (month2.toUpperCase())
+        {
+            case "JANUARY":
+                monthNum = 1;
+                break;
+            case "FEBRUARY":
+                monthNum = 2;
+                break;
+            case "MARCH":
+                monthNum = 3;
+                break;
+            case "APRIL":
+                monthNum = 4;
+                break;
+            case "MAY":
+                monthNum = 5;
+                break;
+            case "JUNE":
+                monthNum = 6;
+                break;
+            case "JULY":
+                monthNum = 7;
+                break;
+            case "AUGUST":
+                monthNum = 8;
+                break;
+            case "SEPTEMBER":
+                monthNum = 9;
+                break;
+            case "OCTOBER":
+                monthNum = 10;
+                break;
+            case "NOVEMBER":
+                monthNum = 11;
+                break;
+            case "DECEMBER":
+                monthNum = 12;
+                break;
+            default:
+                monthNum = 0;
+                break;
+        }
+        return monthNum;
     }
 }
