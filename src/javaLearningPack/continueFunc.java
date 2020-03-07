@@ -9,7 +9,7 @@ public class continueFunc
             System.out.println(i + " ");
             if (i % 3 == 0)
                 continue;
-            System.out.println("");
+            System.out.println();
         }
 
         System.out.println("===================");
