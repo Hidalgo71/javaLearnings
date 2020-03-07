@@ -62,6 +62,7 @@ public class switchCase
                 }
 
         System.out.println("===================");
+                //STRING SWITCH
                 String month2 = "MARCH";
                 int turnBackMonth = switchCase.takeMonthNum(month2);
 
