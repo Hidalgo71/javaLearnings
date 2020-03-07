@@ -24,5 +24,17 @@ public class continueFunc
             }
         }
 
+        System.out.println("===================");
+        //Continue Label
+
+        tag1: for (int var1 = 0; var1 < 5; var1++)
+        {
+            for (int var2 = 0; var2 < 5; var2++)
+            {
+                if (var2 == 2)
+                    continue tag1;       //Not Allowed to var2 = 2, Turning back to where tag placed
+                System.out.println("Var1: " + var1 + ", Var2: " + var2 );
+            }
+        }
     }
 }
