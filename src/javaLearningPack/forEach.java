@@ -26,13 +26,13 @@ public class forEach
         System.out.println("===================");
         //2 Dimensional For Each
 
-        int twiDimArray[][] = new int[3][5];
+        int[][] twiDimArray = new int[3][5];
 
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 5; j++)
                 twiDimArray[i][j] = (i + 2) * (j + 3);
 
-        for (int oneDimArray[] : twiDimArray)
+        for (int[] oneDimArray : twiDimArray)
         {
             for (int oda : oneDimArray) {
                 System.out.println("Value: " + oda);
