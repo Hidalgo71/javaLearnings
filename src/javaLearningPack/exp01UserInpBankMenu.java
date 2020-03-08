@@ -24,7 +24,6 @@ public class exp01UserInpBankMenu
             }
         while (selected < '1' || selected > '5'); // || => OR
         //System.out.println("\n");
-
         switch (selected)
         {
             case '1':
