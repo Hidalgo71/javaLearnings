@@ -21,18 +21,18 @@ public class exp01UserInpBankMenu
                 selected = (char) System.in.read();
             }
         while (selected < '1' || selected > '5'); // || => OR
-        System.out.println("\n");
+        //System.out.println("\n");
 
         switch (selected)
         {
-            case 1:
+            case '1':
                 System.out.println("$: 6.08₺");
                 System.out.println("€: 6.88₺");
                 System.out.println("Gram Gold: 327₺");
                 System.out.println("Bitcoin/TL: 57.462₺");
                 System.out.println("Ripple: 1.42₺");
                 break;
-            case 2:
+            case '2':
                 System.out.print("Select Your Bank Account...");
                 selectBankAccNum = (char) System.in.read();
                 if (selectBankAccNum < 0 && selectBankAccNum > 4)
@@ -43,24 +43,24 @@ public class exp01UserInpBankMenu
                 {
                     switch (selectBankAccNum)
                     {
-                        case 1:
-                            System.out.println("Your money trasferred to Account 1");
+                        case '1':
+                            System.out.println("Your money transferred to Account 1");
                             break;
-                        case 2:
-                            System.out.println("Your money trasferred to Account 2");
+                        case '2':
+                            System.out.println("Your money transferred to Account 2");
                             break;
                         default:
-                            System.out.println("Your money trasferred to Account 3");
+                            System.out.println("Your money transferred to Account 3");
                             break;
                     }
                 }
-            case 3:
+            case '3':
                 System.out.println("Case 3 is working");
                 break;
-            case 4:
+            case '4':
                 System.out.println("Case 4 is working");
                 break;
-            case 5:
+            case '5':
                 System.out.println("Case 5 is working");
                 break;
         }
