@@ -40,7 +40,5 @@ public class newHouses
 
         double volume3 = houseObj4.width * houseObj4.length * houseObj4.height;
         System.out.println("House 4's New Volume is: " + volume3);
-
-
     }
 }
