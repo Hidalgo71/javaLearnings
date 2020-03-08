@@ -43,5 +43,17 @@ public class breakFunc
             }
             System.out.println("After tag2");
         }
+
+        System.out.println("===================");
+        //Return
+        boolean chech3 = false;
+
+        for (int i = 0; i < 22; i++)
+        {
+            System.out.println("Before Return.");
+            if (true)
+                return;
+            System.out.println("After Return.");
+        }
     }
 }
