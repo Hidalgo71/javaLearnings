@@ -11,7 +11,7 @@ class calculate             //Class 2
 {
     public static void main(String[] args)
     {
-        objectJava homeObj = new objectJava();
+        nestedClass homeObj = new nestedClass();
         homeObj.width = 7;
         homeObj.length = 8;
         homeObj.height = 5;
@@ -22,6 +22,5 @@ class calculate             //Class 2
 
         double volume = homeObj.width * homeObj.length * homeObj.height;
         System.out.println("House's Volume is: " + volume);
-
     }
 }
