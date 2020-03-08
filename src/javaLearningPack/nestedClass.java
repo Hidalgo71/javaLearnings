@@ -12,9 +12,9 @@ class calculate             //Class 2
     public static void main(String[] args)
     {
         nestedClass homeObj = new nestedClass();
-        homeObj.width = 7;
-        homeObj.length = 8;
-        homeObj.height = 5;
+        homeObj.width = 74;
+        homeObj.length = 81;
+        homeObj.height = 51;
 
         System.out.println("House Width: " + homeObj.width);
         System.out.println("House Length: " + homeObj.length);
