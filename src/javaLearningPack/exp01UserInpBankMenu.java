@@ -1,12 +1,14 @@
 package javaLearningPack;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class exp01UserInpBankMenu
 {
     public static void main(String[] args) throws IOException {
         char selected;
-        char selectBankAccNum;
+       // char selectBankAccNum;
+        Scanner scanner = new Scanner(System.in);
 
         do
             {
@@ -30,12 +32,13 @@ public class exp01UserInpBankMenu
                 System.out.println("€: 6.88₺");
                 System.out.println("Gram Gold: 327₺");
                 System.out.println("Bitcoin/TL: 57.462₺");
-                System.out.println("Ripple: 1.42₺");
+                System.out.println("Ripple/TL: 1.42₺");
                 break;
             case '2':
                 System.out.print("Select Your Bank Account...");
-                selectBankAccNum = (char) System.in.read();
-                if (selectBankAccNum < 0 && selectBankAccNum > 4)
+                int selectBankAccNum = scanner.nextInt();
+                //selectBankAccNum = (char) System.in.read();
+                if (selectBankAccNum < 0 || selectBankAccNum > 4)
                 {
                     System.out.println("Bank Account can't  found!");
                 }
@@ -43,17 +46,18 @@ public class exp01UserInpBankMenu
                 {
                     switch (selectBankAccNum)
                     {
-                        case '1':
+                        case 1:
                             System.out.println("Your money transferred to Account 1");
                             break;
-                        case '2':
+                        case 2:
                             System.out.println("Your money transferred to Account 2");
                             break;
-                        default:
+                        case 3:
                             System.out.println("Your money transferred to Account 3");
                             break;
                     }
                 }
+                break;
             case '3':
                 System.out.println("Case 3 is working");
                 break;
@@ -63,6 +67,8 @@ public class exp01UserInpBankMenu
             case '5':
                 System.out.println("Case 5 is working");
                 break;
+            default:
+                System.out.println("Wrong menu number!");
         }
     }
 }
