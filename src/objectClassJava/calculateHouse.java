@@ -19,5 +19,4 @@ public class calculateHouse
         System.out.println("House's Volume is: " + volume);
         
     }
-   
 }
