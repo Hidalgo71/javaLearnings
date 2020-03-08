@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class exp01UserInpBankMenu
 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException
+    {
         char selected;
        // char selectBankAccNum;
         Scanner scanner = new Scanner(System.in);
