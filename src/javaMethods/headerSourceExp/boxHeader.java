@@ -6,10 +6,21 @@ public class boxHeader
     double length;
     double height;
 
+    public boxHeader()          //Non Parameter Method
+    {
+
+    }
+    public boxHeader(double width, double length, double height)    //Parameter method constructor
+    {
+        this.width = width;
+        this.length = length;
+        this.height = height;
+    }
+
     void calcVolumeNonPara()
     {
         System.out.println("Non-P Method Volume Calculation: "
-                + width*length*height);
+                + this.width*this.height*this.height);
     }
 
     double calcVolumeNonParaRet()

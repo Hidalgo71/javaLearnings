@@ -7,6 +7,7 @@ public class boxSource
         double volume;
         boxHeader box1 = new boxHeader();
         boxHeader box2 = new boxHeader();
+        boxHeader box3 = new boxHeader(8.71, 54.2,2);       //1st values
 
         box1.width = 17.1;
         box1.length = 84.2;
@@ -50,5 +51,23 @@ public class boxSource
 
         volume = box2.calcVolumePara(19.71, 25.6, 49.2);
         System.out.println("Box2's Volume is(Para): " + volume);
+
+        System.out.println("===================");
+
+        System.out.println("Box3 Width: " + box3.width);
+        System.out.println("Box3 Length: " + box3.length);
+        System.out.println("Box3 Height: " + box3.height);
+        System.out.println();
+
+        volume = box3.width * box3.length * box3.height;
+        System.out.println("Box3's Volume is: " + volume);
+
+        box3.calcVolumeNonPara();
+
+        volume = box3.calcVolumeNonParaRet();
+        System.out.println("Box3's Volume is(Non Para): " + volume);
+
+        volume = box3.calcVolumePara(19.71, 25.6, 49.2);
+        System.out.println("Box3's Volume is(Para): " + volume);
     }
 }
