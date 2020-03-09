@@ -1,39 +1,12 @@
-package javaMethods;
+package javaMethods.headerSourceExp;
 
-public class nonParaAndParaMethod
-{
-    double width;
-    double length;
-    double height;
-
-    void calcVolumeNonPara()
-    {
-        System.out.println("Non-P Method Volume Calculation: "
-                + width*length*height);
-    }
-
-    double calcVolumeNonParaRet()
-    {
-        System.out.println("Non-P Double Type Method Volume Calculation: "
-                + width*length*height);
-        return width*length*height;
-    }
-
-    double calcVolumePara(double widthP, double lengthP, double heightP)
-    {
-        System.out.println("Parameter Method Volume Calculation: "
-                + widthP*lengthP*heightP);
-        return widthP*lengthP*heightP;
-    }
-}
-
-class calculate
+public class boxSource
 {
     public static void main(String[] args)
     {
         double volume;
-        nonParaAndParaMethod box1 = new nonParaAndParaMethod();
-        nonParaAndParaMethod box2 = new nonParaAndParaMethod();
+        boxHeader box1 = new boxHeader();
+        boxHeader box2 = new boxHeader();
 
         box1.width = 17.1;
         box1.length = 84.2;
