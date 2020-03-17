@@ -35,5 +35,18 @@ public class classB
         System.out.println("Class B before object passed: " + obj2.var1 + " " + obj2.var2);
         obj2.sendObj(obj2);
         System.out.println("Class B after object passed: " + obj2.var1 + " " + obj2.var2);
+
+        System.out.println("===================");
+
+        classA obj3 = new classA(5);
+        classA obj4;
+
+        obj4 = obj3.createObjInMet();
+        System.out.println("Obj3 value: " + obj3.numObj);
+        System.out.println("Obj4 value: " + obj4.numObj);
+
+        obj4 = obj4.createObjInMet();
+        System.out.println("Obj4 after method called: " + "Numeric Value:" + obj4.numObj);
+        System.out.println("Obj3 after method called: " + "Numeric Value:" + obj3.numObj);
     }
 }

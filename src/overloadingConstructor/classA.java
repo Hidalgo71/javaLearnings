@@ -7,9 +7,15 @@ public class classA
     double num3;
     int var1;
     int var2;
+    int numObj;
 
     public classA()         //non-parameter ready method
     {    }
+
+    classA(int numObj)
+    {
+        this.numObj = numObj;
+    }
 
     public classA(double num1, double num2, double num3)        //parameter ready method
     {
@@ -38,6 +44,13 @@ public class classA
         comingObj.var2 += 5;
         System.out.println("sendObj Method inside the method..\n " +
                 "Var1: " + var1 + " var2: " + var2);
+    }
+
+    //Creating object inside the method
+    classA createObjInMet()
+    {
+        classA classAObjInMet = new classA(this.numObj + 71);
+        return classAObjInMet;                  //Returning object because method type is method name
     }
 
     void test()
