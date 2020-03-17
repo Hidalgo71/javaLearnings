@@ -11,7 +11,9 @@ public class accessModifiers
     static int num5 = 8;
     static int num6;
 
-    static void print(int i)
+    public final double PINUM = 3.1415926535;
+
+    static void print(int i)                    //Static ony work with static
     {
         System.out.println("i = " + i);
         System.out.println("num5: " + num5 + " num6: " + num6);
@@ -67,4 +69,9 @@ public class accessModifiers
     {
         this.num4 = num4;
     }
+
+    //Final Classes
+    //public final class classFinal         //Final class can't inherit
+    //Final Method
+    //public final String finMet()          // Final method can't override
 }

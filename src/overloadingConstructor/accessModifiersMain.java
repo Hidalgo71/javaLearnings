@@ -39,7 +39,7 @@ public class accessModifiersMain
         //System.out.println("Num3: " + obj.num4);          //Private Cant access
         System.out.println("Num3: " + obj.getNum4());
 
-        System.out.flush();
+        //System.out.flush();
 
         System.out.println("===================");
 
