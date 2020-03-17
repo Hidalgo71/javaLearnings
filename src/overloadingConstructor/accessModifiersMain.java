@@ -38,5 +38,15 @@ public class accessModifiersMain
         obj.setNum4(40);
         //System.out.println("Num3: " + obj.num4);          //Private Cant access
         System.out.println("Num3: " + obj.getNum4());
+
+        System.out.flush();
+
+        System.out.println("===================");
+
+        //accessModifiers obj2 = new accessModifiers();
+       //accessModifiers.print(2245);
+        accessModifiers.num5 = 216;         //To see this change print() must bu after this lines.
+        accessModifiers.num6 = 212;
+        accessModifiers.print(2245);
     }
 }

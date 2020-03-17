@@ -8,6 +8,26 @@ public class accessModifiers
                 int num3;
     private     int num4;
 
+    static int num5 = 8;
+    static int num6;
+
+    static void print(int i)
+    {
+        System.out.println("i = " + i);
+        System.out.println("num5: " + num5 + " num6: " + num6);
+    }
+
+    static
+    {
+        System.out.println("Static block inside the area...");
+        num6 = num5 * 5;
+    }
+
+    public static void main(String[] args)
+    {
+        print(7171);
+    }
+
     public int getNum1()
     {
         return num1;
@@ -47,5 +67,4 @@ public class accessModifiers
     {
         this.num4 = num4;
     }
-
 }
