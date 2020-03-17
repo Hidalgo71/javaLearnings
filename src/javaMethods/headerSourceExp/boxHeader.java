@@ -1,7 +1,7 @@
 package javaMethods.headerSourceExp;
 
-public class boxHeader
-{
+public class boxHeader          //if it is a parameter dont need to prefix "this"
+{                               //if its class member need to be prefix "this"
     double width;
     double length;
     double height;
