@@ -4,9 +4,9 @@ public class mainClass
 {
     public static void main(String[] args)
     {
-        shapeClass shapeObjRef = new shapeClass();
+        shapeClass shapeObjRef;
 
-        shapeClass shapeObj = new shapeClass(71f, 12f);
+        //shapeClass shapeObj = new shapeClass(71f, 12f);
         squareClass squareObj = new squareClass(12f, 99f);
         triangleClass triObj = new triangleClass(3, 4, 5);
 
@@ -22,9 +22,11 @@ public class mainClass
 
         System.out.println("===================");
 
-        shapeObjRef = shapeObj;
+       // shapeObjRef = shapeObj;
         System.out.println(shapeObjRef.calcArea());
         System.out.println(shapeObjRef.calcRegion());
+
+        System.out.println(shapeObjRef.print2());
 
         /*shapeClass aObjRef = dObj;
         aObjRef.print();

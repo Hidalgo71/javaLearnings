@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class shapeClass
+public abstract class shapeClass
 {
     float edge1, edge2;
 
@@ -13,15 +13,24 @@ public class shapeClass
         this.edge2 = edge2;
     }
 
-    protected float calcArea()
-    {
+    protected abstract float calcArea();
+    /*{
        System.out.println("Shape Class Calc Area Method!");
         return 0.0f;
-    }
+    }*/
 
-    protected float calcRegion()
-    {
+    protected abstract float calcRegion();
+   /* {
         System.out.println("Shape Class Calc Region Method!");
         return 0.0f;
+    }*/
+
+    protected void print1()
+    {
+        System.out.println("Shape Class");
+    }
+    protected String print2()
+    {
+        return "Shape Class";
     }
 }
