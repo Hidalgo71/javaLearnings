@@ -17,12 +17,12 @@ class defaultClass implements interface1, interface2, Imain1, Imain2
     }
 
     @Override
-    public void write1() {
+    public void print1() {
 
     }
 
     @Override
-    public void write2() {
+    public void print2() {
 
     }
 }
