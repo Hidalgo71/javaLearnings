@@ -1,6 +1,6 @@
 package interfacePack;
 
-public class classB extends classA
+public class classB extends classA implements interface2
 {
 
 }

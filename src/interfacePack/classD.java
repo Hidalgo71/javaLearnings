@@ -1,6 +1,8 @@
 package interfacePack;
 
-public abstract class classD
+import classInterface.Imain2;
+
+public abstract class classD implements interface2
 {
     public abstract void delete1();
     abstract void delete2();
@@ -15,6 +17,6 @@ public abstract class classD
     private void delete7()
     {   }
 
-    public abstract void read1();
-    abstract void read2();
+    public abstract void readD1();
+    abstract void readD2();
 }
