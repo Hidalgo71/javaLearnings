@@ -8,6 +8,6 @@ public class testFish
         System.out.println(hamsiObj.fishInfo());
 
         hamsiObj = new hamsi(3, 5.9, true, "Yellow", "mediterranean sea");
-        System.out.println(hamsiObj.fishInfo());
+        System.out.println(hamsiObj.fishInfo(12, 14.71));
     }
 }

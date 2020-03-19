@@ -26,5 +26,9 @@ public class hamsi extends fishs
         return super.fishInfo() + "Kind: " + this.kind + "\n";
     }
 
+    @Override
+    protected String fishInfo(int size, double weight)
+    {
+        return super.fishInfo( size,  weight) + "Kind: " + this.kind + "\n";
+    }
 }
-

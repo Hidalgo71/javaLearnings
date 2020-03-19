@@ -64,7 +64,7 @@ public class fishs
 protected String fishInfo()
     {
         String migratingInfo, seasonInfo;
-        if (this.isMigrating == false)
+        if (!this.isMigrating)
         {
             migratingInfo = "No Migrating";
         }
@@ -82,10 +82,68 @@ protected String fishInfo()
             default: seasonInfo = "Winter"; break;
         }
 
-        String result = "Migrating Info: " + migratingInfo + "\n" +
+        return "Migrating Info: " + migratingInfo + "\n" +
                         "Color: " + this.color + "\n" +
                         "Life Time: " + this.lifeTime + "\n" +
                         "Laying Season: " + this.fishLayingSeason + "\n";
-        return result;
+    }
+
+
+protected String fishInfo(double size, int weight)                                 //Overloading
+    {
+        String migratingInfo, seasonInfo;
+        if (!this.isMigrating)
+        {
+            migratingInfo = "No Migrating";
+        }
+        else
+        {
+            migratingInfo = "Migrating";
+        }
+
+        switch (this.setFishLayingSeason)
+        {
+            case 1: seasonInfo = "Spring"; break;
+            case 2: seasonInfo = "Summer"; break;
+            case 3: seasonInfo = "autumn"; break;
+            //case 4: seasonInfo = "Winter"; break;
+            default: seasonInfo = "Winter"; break;
+        }
+
+        return "Migrating Info: " + migratingInfo + "\n" +
+                "Color: " + this.color + "\n" +
+                "Life Time: " + this.lifeTime + "\n" +
+                "Laying Season: " + this.fishLayingSeason + "\n" +
+                "Size: " + size + "\n" +
+                "Weight: " + weight + "\n";
+    }
+
+    protected String fishInfo(int size, double weight)                                 //Overloading
+    {
+        String migratingInfo, seasonInfo;
+        if (!this.isMigrating)
+        {
+            migratingInfo = "No Migrating";
+        }
+        else
+        {
+            migratingInfo = "Migrating";
+        }
+
+        switch (this.setFishLayingSeason)
+        {
+            case 1: seasonInfo = "Spring"; break;
+            case 2: seasonInfo = "Summer"; break;
+            case 3: seasonInfo = "autumn"; break;
+            //case 4: seasonInfo = "Winter"; break;
+            default: seasonInfo = "Winter"; break;
+        }
+
+        return "Migrating Info: " + migratingInfo + "\n" +
+                "Color: " + this.color + "\n" +
+                "Life Time: " + this.lifeTime + "\n" +
+                "Laying Season: " + this.fishLayingSeason + "\n" +
+                "Size: " + size + "\n" +
+                "Weight: " + weight + "\n";
     }
 }
