@@ -4,7 +4,8 @@ public class truckClass extends vehicleClass
 {
     public truckClass()
     {
-
+        super();
+        System.out.println("Truck");
     }
 
     public static void main(String[] args)
