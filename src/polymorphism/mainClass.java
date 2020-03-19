@@ -28,6 +28,15 @@ public class mainClass
 
         System.out.println(shapeObjRef.print2());
 
+        if (triObj instanceof shapeClass)
+        {
+            System.out.println("triObj in shapeClass");
+        }
+        else
+        {
+            System.out.println(" Not triObj in shapeClass");
+        }
+
         /*shapeClass aObjRef = dObj;
         aObjRef.print();
 
